@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio - ชื่อ นามสกุล</title>
+
+<style>
+
+/* ===== RESET ===== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', Tahoma, sans-serif;
+}
+
+/* ===== BODY ===== */
+body{
+    background: linear-gradient(135deg,#667eea,#764ba2);
+    padding:40px 20px;
+    color:#333;
+}
+
+/* ===== CONTAINER ===== */
+.container{
+    max-width:900px;
+    margin:auto;
+    background:white;
+    border-radius:20px;
+    padding:40px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* ===== PROFILE TOP ===== */
+.profile{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.profile img{
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    object-fit:cover;
+    border:6px solid #667eea;
+    margin-bottom:15px;
+}
+
+.profile h1{
+    font-size:28px;
+}
+
+.profile p{
+    color:#666;
+}
+
+/* ===== SECTION ===== */
+.section{
+    margin-bottom:30px;
+}
+
+.section h2{
+    margin-bottom:15px;
+    padding-bottom:5px;
+    border-bottom:3px solid #667eea;
+    display:inline-block;
+}
+
+/* ===== EDUCATION LIST ===== */
+.education li{
+    margin-bottom:8px;
+}
+
+/* ===== SOCIAL ===== */
+.social a{
+    display:inline-block;
+    margin-right:10px;
+    margin-top:10px;
+    padding:8px 15px;
+    background:#667eea;
+    color:white;
+    text-decoration:none;
+    border-radius:20px;
+    transition:0.3s;
+}
+
+.social a:hover{
+    background:#764ba2;
+}
+
+/* ===== BACK BUTTON ===== */
+.back{
+    display:inline-block;
+    margin-top:20px;
+    padding:10px 20px;
+    background:#333;
+    color:white;
+    text-decoration:none;
+    border-radius:25px;
+}
+
+.back:hover{
+    background:#555;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:600px){
+    .container{
+        padding:20px;
+    }
+    .profile img{
+        width:150px;
+        height:150px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- PROFILE -->
+    <div class="profile">
+        <img src="img/i3.jfif" alt="student">
+        <h1>นูรฟาวาตี  - เจะนิ</h1>
+        <p>นักเรียนชั้น ม.6/2</p>
+    </div>
+
+    <!-- ABOUT -->
+    <div class="section">
+        <h2>ประวัติส่วนตัว</h2>
+        <p>
+            เล่น ดูติ๊กตอก ฟังเพลง
+        </p>
+    </div>
+
+    <!-- EDUCATION -->
+    <div class="section">
+        <h2>ประวัติการศึกษา</h2>
+        <ul class="education">
+            <li>อนุบาล: โรงเรียนบ้านนํ้าบ่อ</li>
+            <li>ประถมศึกษา: โรงเรียนสามัคคีธรรมวิทยา</li>
+            <li>มัธยมต้น: โรงเรียนภักดีวิทยา</li>
+            <li>มัธยมปลาย: โรงเรียนภักดีวิทยา(ปัจจุบัน)</li>
+        </ul>
+    </div>
+
+    <!-- FUTURE -->
+    <div class="section">
+        <h2>อนาคตที่ใฝ่ฝัน</h2>
+        <p>
+            ต้องการศึกษาต่อคณะบริหารธุรกิจ
+            มหาวิทยาลัยอาชีวศึกษา
+            และอยากประกอบอาชีพเป็นคุณครูอนุบาล
+        </p>
+    </div>
+
+    <!-- ADDRESS -->
+    <div class="section">
+        <h2>ที่อยู่</h2>
+        <p>
+            บ้านเลขที่ 7/10 หมู่ 4 ตำบล ตะโล๊ะเเมะนา 
+            อำเภอ ทุ่งยางเเดง จังหวัด ปัตตานี
+        </p>
+    </div>
+
+    <!-- SOCIAL -->
+    <div class="section">
+        <h2>Social Media</h2>
+        <div class="social">
+            <a href="#">Facebook นูรฟาวาตี เจะนิ</a>
+            <a href="#">Instagram nufaaa</a>
+            <a href="#">TikTok nufaaa</a>
+            <a href="#">Email miss nurfawati</a>
+        </div>
+    </div>
+
+    <!-- BACK BUTTON -->
+    <a href="index.html" class="back">← กลับหน้าแรก</a>
+
+</div>
+
+</body>
+</html>

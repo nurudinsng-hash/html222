@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio กลุ่ม 1</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* ===== RESET ===== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Kanit', sans-serif;
+}
+
+/* ===== BODY ===== */
+body{
+    background: linear-gradient(135deg,#667eea,#764ba2);
+    min-height:100vh;
+    padding:40px 20px;
+}
+
+/* ===== HEADER ===== */
+.header{
+    text-align:center;
+    color:white;
+    margin-bottom:50px;
+    animation:fadeDown 1s ease;
+}
+
+.header h1{
+    font-size:40px;
+    font-weight:700;
+}
+
+.header p{
+    opacity:0.9;
+    font-size:18px;
+}
+
+@keyframes fadeDown{
+    from{opacity:0; transform:translateY(-30px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+/* ===== GRID ===== */
+.container{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+}
+
+/* ===== CARD ===== */
+.card{
+    background:white;
+    border-radius:25px;
+    overflow:hidden;
+    box-shadow:0 15px 35px rgba(0,0,0,0.2);
+    transition:0.4s;
+    text-align:center;
+    position:relative;
+}
+
+.card:hover{
+    transform:translateY(-12px) scale(1.02);
+}
+
+/* ===== IMAGE ===== */
+.card img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+}
+
+/* ===== CONTENT ===== */
+.card-content{
+    padding:25px;
+}
+
+.card-content h2{
+    font-size:20px;
+    margin-bottom:10px;
+}
+
+.card-content p{
+    color:#555;
+    font-size:14px;
+}
+
+/* ===== BUTTON ===== */
+.btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:10px 22px;
+    background:linear-gradient(135deg,#667eea,#764ba2);
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    font-size:14px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    opacity:0.8;
+}
+
+/* ===== FOOTER ===== */
+.footer{
+    text-align:center;
+    color:white;
+    margin-top:50px;
+    opacity:0.8;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:600px){
+    .header h1{
+        font-size:26px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="header">
+    <h1>👩‍💻 Portfolio กลุ่ม 2</h1>
+    <p>📚 รายวิชาคอมพิวเตอร์ ม.6 | โปรเจค HTML Portfolio</p>
+</div>
+
+<div class="container">
+
+    <!-- Student Card Template (แก้ข้อมูลแต่ละคนได้เลย) -->
+
+    <div class="card">
+        <img src="img/i1.jfif" alt="student1">
+        <div class="card-content">
+            <h2>👩‍🎓 นางสาว ฮูสนา ซง</h2>
+            <p>เลขที่: 2</p>
+            <p>รหัสนักเรียน: 1556</p>
+            <a href="student1.html" class="btn">✨ ดู Portfolio</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="img/i2.jfif" alt="student2">
+        <div class="card-content">
+            <h2>👨‍🎓 นางสาว กามีรา ซง</h2>
+            <p>เลขที่: 7</p>
+            <p>รหัสนักเรียน: 1587</p>
+            <a href="student2.html" class="btn">✨ ดู Portfolio</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="img/i3.jfif" alt="student3">
+        <div class="card-content">
+            <h2>👩‍🎓 นางสาว นูรฟาวาตี เจะนิ</h2>
+            <p>เลขที่: 16</p>
+            <p>รหัสนักเรียน: 1607</p>
+            <a href="student3.html" class="btn">✨ ดู Portfolio</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="img/i4.jfif" alt="student4">
+        <div class="card-content">
+            <h2>👨‍🎓 นางสาว ฟัตมา เจะนิ</h2>
+            <p>เลขที่: 8</p>
+            <p>รหัสนักเรียน: 1589</p>
+            <a href="student4.html" class="btn">✨ ดู Portfolio</a>
+        </div>
+    </div>
+
+    
+
+
+<div class="footer">
+    🌟 โรงเรียนของเรา | ปีการศึกษา 2569
+</div>
+
+</body>
+</html>
